@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/state_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="текст"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="текст"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/state_title"
+        app:layout_constraintTop_toBottomOf="@+id/state_title" />
+
+    <Button
+        android:id="@+id/state_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/text_color"
+        android:padding="20dp"
+        android:text="подробние"
+
+
+
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/state_title"
+        app:layout_constraintTop_toBottomOf="@+id/state_title" />
+
+    <ImageView
+
+        android:id="@+id/state_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+
+        android:src="@drawable/logo"
+   app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+</androidx.constraintlayout.widget.ConstraintLayout>
